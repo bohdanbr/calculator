@@ -1,26 +1,20 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+  import { store } from './store.js'
+  import CalculatorMain from './components/CalculatorMain.vue'
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<template>
+  <CalculatorMain />
+  <br>
+  <br>
+  <div class="result">Результат: {{ store.result }}</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="fixed">
+    <td>1. Добавлена проверка по вводу только цифр и ограничение в 4 числа</td>
+    <tr></tr>
+    <td>2. Добавлена поддержка логических кнопок на клавиатуре</td>
+  </div>
+</template>
