@@ -7,9 +7,7 @@
   <CalculatorMain />
   <br>
   <br>
-  <div class="result">Результат: {{ store.result }}</div>
-  <br>
-  <br>
+  <div class="result" v-show="store.result !== ''">Результат: {{ store.result }}</div>
   <br>
   <br>
   <div class="fixed">

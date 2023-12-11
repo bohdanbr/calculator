@@ -84,6 +84,7 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('keydown', pressKey);
 });
+
 </script>
 
 <template>
@@ -106,9 +107,17 @@ input {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #000;
+  font-size: 30px;
 }
 .fixed {
   background-color: rgb(236, 234, 234);
   border-radius: 5px;
+  font-size: 18px;
+}
+.result {
+  font-size: 25px;
+}
+.operations {
+  font-size: 25px;
 }
 </style>
